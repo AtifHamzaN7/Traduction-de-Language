@@ -1,0 +1,31 @@
+static int x = 0;
+static int y = 0;
+
+int inc_x(int z) {
+x = (x + 1);
+return (x + z);
+}
+
+int inc_y(int z) {
+y = (y + 1);
+return (y + z);
+}
+
+
+main {
+int a = inc_x(0);  
+print(a);           
+a = inc_y(0);  
+print(a);      
+a = inc_x(1);  
+print(a);      
+a = inc_y(1);  
+print(a);      
+a = inc_x(1);  
+print(a);      
+a = inc_y(1);  
+print(a);      
+print(x);      
+print(y);    
+
+} // resultat attendu : 1 1 3 3 4 4 3 3

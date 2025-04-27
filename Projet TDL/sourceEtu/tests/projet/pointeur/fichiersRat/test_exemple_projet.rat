@@ -1,0 +1,7 @@
+main {
+    int *px = (new int);  // Création d'un pointeur
+    int x = 423;          // Ajout du point-virgule manquant ici
+    px = &x;              // Assignation de l'adresse de x à px
+    int y = (*px);        // Déférencement de px pour obtenir la valeur de x
+    print y;              // Affiche 423
+}
